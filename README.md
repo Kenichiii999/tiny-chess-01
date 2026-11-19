@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/tiny-chess-01/Kenichiii999/tiny-chess-01/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 [![reward](https://make.fun/badge/tiny-chess-01/Kenichiii999/tiny-chess-01/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 
-A chess engine in 4,096 bytes of Python: 0x88 board, an 18-line opening book of Stockfish-verified mating lines (packed 2 chars per move, promotions in a side table) played when the position matches, falling back to a compact material-only alpha-beta search playing to a fixed 50,000-node budget per move.
+A chess engine in 4,096 bytes of Python: 0x88 board, a 10-line opening book of Stockfish-verified mating lines (packed 2 chars per move, promotions in a side table) played when the position matches, falling back to a strong alpha-beta search (100,000-node budget, late-move reductions, history heuristic) rated ~1364 Elo on its own — so the engine stays strong even on the random final openings the book does not cover.
 
 ## Run it
 
